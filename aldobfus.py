@@ -21,10 +21,10 @@ import argparse
 
 def params():
 	sampleinput = {
-	'syntax' : """python3 deob.py -n X -p "[\d \+]+" -l "chr(int({0}))" -f ./dummy.vbsa.py -d '"' -c " &" """
+	'syntax' : """python3 deob.py -n X -p "[\d \+]+" -l "chr(int({0}))" -f ./dummy.vbsa.py -d '"' -c " &" """,
 	'inputfiletext': """CreAteOvjJect(X(119)&X( 99+ 1)& X(112 )&X(108)).&CreAteOvjJect(X(119)&X(99)&X(112)&X(108))hello  X(109)  eh
 	CreAteOvjJect(X(119)&X( 99+ 1)& X(112 )&X(99)&X(112)&X(108))hello  X(109)  eh
-	huhaa"""
+	huhaa""",
 	'sampleOutput': """Createovjject("wdpl" ).&createovjject("wcpl" )hello  "m" eh
 	Createovjject("wdpcpl" )hello  "m" eh
 	Huhaa"""
