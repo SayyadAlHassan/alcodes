@@ -1,4 +1,4 @@
-### aldeobfus.py (IPA: /ʌldɔbfəs/)
+### aldobfus.py (IPA: /ʌldɔbfəs/)
 
 Often malware scripts deobfuscate code by splitting the data into characters or integers and calling decryption routine repeatedly on each unit.
 It can work for a wide variety of custom decryption functions and replace the obfuscated function calls with the output.
@@ -6,10 +6,10 @@ Attached images compare an obfuscated payload of a deobfuscated vbsworm with its
 
 ~~~
 syntax:
-python3 aldeobfus.py -n <NameofFunction> -p <paramterRegex> -l <deobfuscationLogic> -f <inputfile> -d [delimiters] -c [concatChars] -o [outputfile] [-s]
+python3 aldobfus.py -n <NameofFunction> -p <paramterRegex> -l <deobfuscationLogic> -f <inputfile> -d [delimiters] -c [concatChars] -o [outputfile] [-s]
 
 usage:	
-python3 aldeobfus.py -n X -p "[\d ]+" -l "chr(int({}))" -f .\sample1.vbs_ -d "\"" -c "&"  -o decr1.vbs_
+python3 aldobfus.py -n X -p "[\d ]+" -l "chr(int({}))" -f .\sample1.vbs_ -d "\"" -c "&"  -o decr1.vbs_
 ~~~
 
 
