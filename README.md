@@ -16,7 +16,7 @@ Eg1: If Am=""THen If LcAsE(MiD(WsCriPt.ScRipTfUlLnAmE,2))=X(58)&X(92)&LcAsE(Ar)T
 Eg2: dummyvar = Df((45+59)) & Df(50+51) &Df(110-2)&Df(0x6c)&Df(0x60 +15)
 
 parameter usage to decrypt eg1:	
-python3 aldobfus.py -n X -p "[\d ]+" -l "chr(int({}))" -f .\sample1.vbs_ -d "\"" -c "&"  -o decr1.vbs_
+python3 aldobfus.py -n X -p "[\d ]+" -l "chr(int({}))" -f .\sample1.vbs_ -d "\"" -c "&"  -o decr1.vbs_ -s
 
 parameter usage to decrypt eg2:
 python3 aldobfus.py -n Df -p "[\da-f\+x\(\) \-]+" -l "chr(int({0}))" -f in2.txt -d '"' -c " &" -o in2.out.txt
